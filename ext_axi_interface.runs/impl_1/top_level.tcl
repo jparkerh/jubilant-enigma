@@ -69,16 +69,16 @@ set rc [catch {
   set_property board_part xilinx.com:zcu102:part0:3.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.cache/wt [current_project]
-  set_property parent.project_path /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.xpr [current_project]
-  set_property ip_output_repo /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.cache/ip [current_project]
+  set_property webtalk.parent_dir /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.cache/wt [current_project]
+  set_property parent.project_path /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.xpr [current_project]
+  set_property ip_output_repo /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.runs/synth_1/top_level.dcp
+  add_files -quiet /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.runs/synth_1/top_level.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/design_1.bd
-  read_ip -quiet /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xci
+  add_files /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/design_1.bd
+  read_ip -quiet /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xci
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top top_level -part xczu9eg-ffvb1156-2-e

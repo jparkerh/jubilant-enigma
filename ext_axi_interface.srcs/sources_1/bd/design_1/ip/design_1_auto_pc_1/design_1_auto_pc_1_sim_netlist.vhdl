@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Wed Nov  7 08:56:22 2018
+-- Date        : Wed Nov  7 08:56:20 2018
 -- Host        : xsjapps53 running 64-bit Ubuntu 16.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_auto_pc_1 -prefix
+--               design_1_auto_pc_1_ design_1_auto_pc_1_sim_netlist.vhdl
 -- Design      : design_1_auto_pc_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -51,8 +51,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_incr_cmd is
     D : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \m_payload_i_reg[8]\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_incr_cmd : entity is "axi_protocol_converter_v2_1_17_b2s_incr_cmd";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_incr_cmd;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_incr_cmd is
@@ -1256,8 +1254,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm is
     s_ready_i_reg : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm : entity is "axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm is
@@ -1769,8 +1765,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_simple_fifo is
     \in\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_simple_fifo : entity is "axi_protocol_converter_v2_1_17_b2s_simple_fifo";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_simple_fifo;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_simple_fifo is
@@ -3740,8 +3734,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wr_cmd_fsm is
     \cnt_read_reg[1]_rep__0\ : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wr_cmd_fsm : entity is "axi_protocol_converter_v2_1_17_b2s_wr_cmd_fsm";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wr_cmd_fsm;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wr_cmd_fsm is
@@ -4307,8 +4299,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wrap_cmd is
     \m_payload_i_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \m_payload_i_reg[11]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wrap_cmd : entity is "axi_protocol_converter_v2_1_17_b2s_wrap_cmd";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wrap_cmd;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_wrap_cmd is
@@ -6239,8 +6229,6 @@ entity design_1_auto_pc_1_axi_register_slice_v2_1_17_axic_register_slice is
     aresetn : in STD_LOGIC;
     m_valid_i_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_register_slice_v2_1_17_axic_register_slice : entity is "axi_register_slice_v2_1_17_axic_register_slice";
 end design_1_auto_pc_1_axi_register_slice_v2_1_17_axic_register_slice;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_register_slice_v2_1_17_axic_register_slice is
@@ -11940,8 +11928,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_b_channel is
     m_axi_bvalid : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_b_channel : entity is "axi_protocol_converter_v2_1_17_b2s_b_channel";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_b_channel;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_b_channel is
@@ -12287,8 +12273,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_cmd_translator is
     \m_payload_i_reg[11]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \m_payload_i_reg[8]\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_cmd_translator : entity is "axi_protocol_converter_v2_1_17_b2s_cmd_translator";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_cmd_translator;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_cmd_translator is
@@ -12671,8 +12655,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_r_channel is
     \in\ : in STD_LOGIC_VECTOR ( 33 downto 0 );
     areset_d1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_r_channel : entity is "axi_protocol_converter_v2_1_17_b2s_r_channel";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_r_channel;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_r_channel is
@@ -12845,8 +12827,6 @@ entity design_1_auto_pc_1_axi_register_slice_v2_1_17_axi_register_slice is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_valid_i_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_register_slice_v2_1_17_axi_register_slice : entity is "axi_register_slice_v2_1_17_axi_register_slice";
 end design_1_auto_pc_1_axi_register_slice_v2_1_17_axi_register_slice;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_register_slice_v2_1_17_axi_register_slice is
@@ -13037,8 +13017,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_ar_channel is
     D : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \m_payload_i_reg[11]\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_ar_channel : entity is "axi_protocol_converter_v2_1_17_b2s_ar_channel";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_ar_channel;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_ar_channel is
@@ -13262,8 +13240,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_aw_channel is
     D : in STD_LOGIC_VECTOR ( 6 downto 0 );
     \m_payload_i_reg[8]\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_aw_channel : entity is "axi_protocol_converter_v2_1_17_b2s_aw_channel";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_aw_channel;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s_aw_channel is
@@ -13558,8 +13534,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s is
     s_axi_arvalid : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s : entity is "axi_protocol_converter_v2_1_17_b2s";
 end design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s;
 
 architecture STRUCTURE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_b2s is
@@ -14180,8 +14154,6 @@ entity design_1_auto_pc_1_axi_protocol_converter_v2_1_17_axi_protocol_converter 
   attribute C_TRANSLATION_MODE of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_17_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of design_1_auto_pc_1_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;

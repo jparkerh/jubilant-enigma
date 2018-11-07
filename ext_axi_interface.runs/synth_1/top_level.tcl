@@ -23,39 +23,45 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.cache/wt [current_project]
-set_property parent.project_path /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.xpr [current_project]
+set_property webtalk.parent_dir /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.cache/wt [current_project]
+set_property parent.project_path /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu102:part0:3.2 [current_project]
-set_property ip_output_repo /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.cache/ip [current_project]
+set_property ip_output_repo /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /group/techsup/parkerh/remote_axi/remote_axi.srcs/sources_1/new/top_level.v
-add_files /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+read_verilog -library xil_defaultlib /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/imports/new/top_level.v
+add_files /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
-read_ip -quiet /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xci
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc]
+read_ip -quiet /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xci
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /group/techsup/parkerh/ext_axi_interface/jubilant-enigma/ext_axi_interface.srcs/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

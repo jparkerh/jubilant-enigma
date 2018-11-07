@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Wed Nov  7 09:24:04 2018
+| Date         : Wed Nov  7 12:22:26 2018
 | Host         : xsjapps53 running 64-bit Ubuntu 16.04.3 LTS
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -193,6 +193,7 @@ Table of Contents
 +------------------------------+------+
 | design_1_zynq_ultra_ps_e_0_0 |    1 |
 | design_1_xbar_1              |    1 |
+| design_1_system_ila_0_0      |    1 |
 | design_1_proc_sys_reset_0_0  |    1 |
 | design_1_axi_gpio_0_0        |    1 |
 | design_1_auto_pc_1           |    1 |
