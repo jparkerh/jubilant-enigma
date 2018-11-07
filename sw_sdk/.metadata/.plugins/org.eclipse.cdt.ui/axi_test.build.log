@@ -1,0 +1,6 @@
+11:39:33 **** Incremental Build of configuration Debug for project axi_test ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:39:33 Build Finished (took 195ms)
+

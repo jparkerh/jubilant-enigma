@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# 
+# Start of session at: Wed Nov  7 11:45:50 2018
+# Process ID: 8931
+# Current directory: /group/techsup/parkerh/ext_axi_interface/sw_sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /group/techsup/parkerh/ext_axi_interface/sw_sdk/webtalk/webtalk.log
+# Journal file: /group/techsup/parkerh/ext_axi_interface/sw_sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

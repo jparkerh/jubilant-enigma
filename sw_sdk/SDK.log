@@ -1,0 +1,160 @@
+09:32:33 INFO  : Registering command handlers for SDK TCF services
+09:32:34 INFO  : Launching XSCT server: xsct -n -interactive /group/techsup/parkerh/ext_axi_interface/sw_sdk/temp_xsdb_launch_script.tcl
+09:32:39 INFO  : XSCT server has started successfully.
+09:32:50 INFO  : Successfully done setting XSCT server connection channel  
+09:32:50 INFO  : Processing command line option -hwspec /group/techsup/parkerh/ext_axi_interface/hw_hdf/top_level.hdf.
+09:32:50 INFO  : Successfully done setting SDK workspace  
+11:14:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:43 INFO  : Connected to target on host 'lentinus15' and port '3121'.
+11:16:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411" && level==0} -index 0' command is executed.
+11:16:59 INFO  : FPGA configured successfully with bitstream "/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/top_level.bit"
+11:17:30 INFO  : Connected to target on host 'lentinus15' and port '3121'.
+11:17:31 WARN  : SDK version '2018.2' doesn't match hw_server version '2018.3'. Some debug features may not work.
+11:17:37 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A12411' is selected.
+11:17:37 INFO  : 'jtag frequency' command is executed.
+11:17:37 INFO  : Sourcing of '/proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:17:37 INFO  : Context for 'APU' is selected.
+11:17:38 INFO  : Hardware design information is loaded from '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf'.
+11:17:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:17:38 INFO  : Context for 'APU' is selected.
+11:17:38 INFO  : Sourcing of '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl' is done.
+11:17:41 INFO  : 'psu_init' command is executed.
+11:17:42 INFO  : 'after 1000' command is executed.
+11:17:42 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:17:43 INFO  : 'after 1000' command is executed.
+11:17:43 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:17:43 INFO  : 'catch {psu_protection}' command is executed.
+11:17:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:17:43 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:17:44 INFO  : The application '/group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:17:44 INFO  : 'configparams force-mem-access 0' command is executed.
+11:17:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:lentinus15:3121
+source /proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+loadhw -hw /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+source /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+rst -processor
+dow /group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:17:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:17:44 INFO  : 'con' command is executed.
+11:17:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+con
+----------------End of Script----------------
+
+11:17:44 INFO  : Launch script is exported to file '/group/techsup/parkerh/ext_axi_interface/sw_sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_axi_test.elf_on_zcu102-8.tcl'
+11:19:50 WARN  : channel "tcfchan#2" closed
+11:37:47 INFO  : Connected to target on host 'lentinus15' and port '3121'.
+11:37:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411" && level==0} -index 0' command is executed.
+11:38:03 INFO  : FPGA configured successfully with bitstream "/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/top_level.bit"
+11:38:14 INFO  : Connected to target on host 'lentinus15' and port '3121'.
+11:38:14 WARN  : SDK version '2018.2' doesn't match hw_server version '2018.3'. Some debug features may not work.
+11:38:16 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A12411' is selected.
+11:38:16 INFO  : 'jtag frequency' command is executed.
+11:38:16 INFO  : Sourcing of '/proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:38:16 INFO  : Context for 'APU' is selected.
+11:38:16 INFO  : Hardware design information is loaded from '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf'.
+11:38:16 INFO  : 'configparams force-mem-access 1' command is executed.
+11:38:16 INFO  : Context for 'APU' is selected.
+11:38:16 INFO  : Sourcing of '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl' is done.
+11:38:19 INFO  : 'psu_init' command is executed.
+11:38:20 INFO  : 'after 1000' command is executed.
+11:38:20 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:38:21 INFO  : 'after 1000' command is executed.
+11:38:21 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:38:21 INFO  : 'catch {psu_protection}' command is executed.
+11:38:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:38:21 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:38:22 INFO  : The application '/group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:38:22 INFO  : 'configparams force-mem-access 0' command is executed.
+11:38:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:lentinus15:3121
+source /proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+loadhw -hw /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+source /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+rst -processor
+dow /group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:38:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:38:22 INFO  : 'con' command is executed.
+11:38:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+con
+----------------End of Script----------------
+
+11:38:22 INFO  : Launch script is exported to file '/group/techsup/parkerh/ext_axi_interface/sw_sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_axi_test.elf_on_zcu102-8.tcl'
+11:39:34 INFO  : Disconnected from the channel tcfchan#3.
+11:39:35 INFO  : Connected to target on host 'lentinus15' and port '3121'.
+11:39:42 WARN  : SDK version '2018.2' doesn't match hw_server version '2018.3'. Some debug features may not work.
+11:39:45 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A12411' is selected.
+11:39:45 INFO  : 'jtag frequency' command is executed.
+11:39:45 INFO  : Sourcing of '/proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:39:45 INFO  : Context for 'APU' is selected.
+11:39:45 INFO  : Hardware design information is loaded from '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf'.
+11:39:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:45 INFO  : Context for 'APU' is selected.
+11:39:45 INFO  : Sourcing of '/group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl' is done.
+11:39:48 INFO  : 'psu_init' command is executed.
+11:39:49 INFO  : 'after 1000' command is executed.
+11:39:49 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:39:50 INFO  : 'after 1000' command is executed.
+11:39:50 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:39:50 INFO  : 'catch {psu_protection}' command is executed.
+11:39:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:39:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:39:51 INFO  : The application '/group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:39:51 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:lentinus15:3121
+source /proj/gsd/vivado/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+loadhw -hw /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+source /group/techsup/parkerh/ext_axi_interface/sw_sdk/top_level_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+rst -processor
+dow /group/techsup/parkerh/ext_axi_interface/sw_sdk/axi_test/Debug/axi_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:39:51 INFO  : 'con' command is executed.
+11:39:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A12411"} -index 1
+con
+----------------End of Script----------------
+
+11:39:51 INFO  : Launch script is exported to file '/group/techsup/parkerh/ext_axi_interface/sw_sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_axi_test.elf_on_zcu102-8.tcl'
+11:45:49 INFO  : Disconnected from the channel tcfchan#4.
