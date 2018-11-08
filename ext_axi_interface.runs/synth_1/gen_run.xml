@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1541611308">
-  <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1541621749">
+  <File Type="PA-TCL" Name="top_level.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_level.vds"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
   <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="top_level.vds"/>
-  <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
-  <File Type="PA-TCL" Name="top_level.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
@@ -40,18 +37,13 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="axi_gpio_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_ds_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_gpio_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
 </GenRun>
